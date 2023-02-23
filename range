@@ -1,0 +1,20 @@
+//Program to print range of oddnumbers except 3rd number// 
+#include<stdio.h>
+#include<conio.h>
+void main(){
+	int n1,n2,i,count=0;
+	printf("Enter first number in the range:");
+	scanf("%d",&n1);
+	printf("Enter second number in the range:");
+	scanf("%d",&n2);
+	printf("odd numbers in the range [%d,%d]except third number:\n",n1,n2);
+	for(i=n1;i<=n2;i++){
+		if(i%2==1){
+			count++;
+			if(count!=3){
+				printf("%d\t",i);
+			}
+		}
+		
+	}
+}
