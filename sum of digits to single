@@ -1,0 +1,20 @@
+// Program to print sum of digits of a given number until sum is a single digit//
+#include<stdio.h>
+main(){
+	// to print 1 2 3 4 5
+	int n,i,sum=0,r;
+	scanf("%d",&n);   
+	i=1;
+	for(i=1;i<=2;i++){
+		sum=0;
+		while(n>0) 
+		{
+			r=n%10;
+			sum=sum+r;  // 0+3
+			n=n/10;
+		}	
+		printf("\n%d",sum);
+		n=sum;
+	}	
+	printf("\n%d",sum);
+}
